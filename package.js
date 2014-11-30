@@ -21,7 +21,7 @@ Package.onUse(function(api) {
   api.versionsFrom('1.0');
 
   api.use('jquery');
-  api.use('grigio:ruby-sass');
+  api.use('grigio:ruby-sass@0.0.8');
 
 
   var path = Npm.require('path');
