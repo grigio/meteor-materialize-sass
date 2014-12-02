@@ -5,18 +5,6 @@ Package.describe({
   version: "0.0.1"
 });
 
-// Package._transitional_registerBuildPlugin({
-//   name: 'meteor-ruby-sass',
-//   use: [],
-//   sources: [
-//     'plugin/compile-sass.js'
-//   ],
-//   npmDependencies: {
-//     // 'fibers': '1.0.1',
-//     'minimatch': '0.4.0'
-//   }
-// });
-
 Package.onUse(function(api) {
   api.versionsFrom('1.0');
 
@@ -53,10 +41,15 @@ Package.onUse(function(api) {
   api.addFiles(path.join(asset_path, 'sass/components', '_waves.scss'), 'server');
 
   api.addFiles(path.join(asset_path, 'sass', 'materialize.scss'), 'server');
-  // api.addFiles(path.join(asset_path, 'js', 'velocity.min.js'), 'client');
-  // api.addFiles(path.join(asset_path, 'js', 'forms.js'), 'client');
 
+  // javascript base
+  api.addFiles(path.join(asset_path, 'js', 'velocity.min.js'), 'client');
+  api.addFiles(path.join(asset_path, 'js', 'hammer.min.js'), 'client');
+  api.addFiles(path.join(asset_path, 'js', 'jquery.easing.1.3.js'), 'client');
 
+  api.addFiles(path.join(asset_path, 'js', 'dropdown.js'), 'client');
+  api.addFiles(path.join(asset_path, 'js', 'waves.js'), 'client');
+  api.addFiles(path.join(asset_path, 'js', 'tabs.js'), 'client');
 
   // fonts
   api.addFiles(path.join(asset_path, 'font/roboto', 'Roboto-Bold.ttf'), 'client');
