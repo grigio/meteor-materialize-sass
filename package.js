@@ -2,7 +2,7 @@ Package.describe({
   name: 'grigio:materialize-sass',
   summary: 'Materialize scss theme',
   git: "https://github.com/grigio/meteor-materialize-sass.git",
-  version: "0.0.1"
+  version: "0.0.2"
 });
 
 Package.onUse(function(api) {
