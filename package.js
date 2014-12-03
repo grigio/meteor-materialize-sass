@@ -2,7 +2,7 @@ Package.describe({
   name: 'grigio:materialize-sass',
   summary: 'Materialize scss theme',
   git: "https://github.com/grigio/meteor-materialize-sass.git",
-  version: "0.0.2"
+  version: "0.0.3"
 });
 
 Package.onUse(function(api) {
@@ -11,6 +11,9 @@ Package.onUse(function(api) {
   api.use('jquery');
   api.use('grigio:ruby-sass@0.0.8');
 
+  // UI
+  api.use('hammer:hammer@2.0.4_2');
+  api.use('percolate:velocityjs@1.1.0');
 
   var path = Npm.require('path');
   var asset_path = path.join('materialize');
@@ -42,9 +45,11 @@ Package.onUse(function(api) {
 
   api.addFiles(path.join(asset_path, 'sass', 'materialize.scss'), 'server');
 
-  // javascript base
-  api.addFiles(path.join(asset_path, 'js', 'velocity.min.js'), 'client');
-  api.addFiles(path.join(asset_path, 'js', 'hammer.min.js'), 'client');
+  // javascript libs
+  // api.addFiles(path.join(asset_path, 'js', 'velocity.min.js'), 'client');
+  // api.addFiles(path.join(asset_path, 'js', 'hammer.min.js'), 'client');
+
+  // javascript
   api.addFiles(path.join(asset_path, 'js', 'jquery.easing.1.3.js'), 'client');
 
   api.addFiles(path.join(asset_path, 'js', 'dropdown.js'), 'client');
