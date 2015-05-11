@@ -36,11 +36,13 @@ Package.onUse(function(api) {
   api.addFiles(path.join(asset_path, 'sass/components', '_preloader.scss'), 'server');
   api.addFiles(path.join(asset_path, 'sass/components', '_roboto.scss'), 'server');
   api.addFiles(path.join(asset_path, 'sass/components', '_sideNav.scss'), 'server');
+  api.addFiles(path.join(asset_path, 'sass/components', '_slider.scss'), 'server');
   api.addFiles(path.join(asset_path, 'sass/components', '_table_of_contents.scss'), 'server');
   api.addFiles(path.join(asset_path, 'sass/components', '_tabs.scss'), 'server');
   api.addFiles(path.join(asset_path, 'sass/components', '_toast.scss'), 'server');
   api.addFiles(path.join(asset_path, 'sass/components', '_tooltip.scss'), 'server');
   api.addFiles(path.join(asset_path, 'sass/components', '_typography.scss'), 'server');
+  api.addFiles(path.join(asset_path, 'sass/components', '_variables.scss'), 'server');
   api.addFiles(path.join(asset_path, 'sass/components', '_waves.scss'), 'server');
 
   api.addFiles(path.join(asset_path, 'sass', 'materialize.scss'), 'server');
@@ -52,9 +54,34 @@ Package.onUse(function(api) {
   // javascript
   api.addFiles(path.join(asset_path, 'js', 'jquery.easing.1.3.js'), 'client');
 
+  api.addFiles(path.join(asset_path, 'js', 'animation.js'), 'client');
+  api.addFiles(path.join(asset_path, 'js', 'buttons.js'), 'client');
+  api.addFiles(path.join(asset_path, 'js', 'cards.js'), 'client');
+  api.addFiles(path.join(asset_path, 'js', 'character_counter.js'), 'client');
+  api.addFiles(path.join(asset_path, 'js', 'collapsible.js'), 'client');
   api.addFiles(path.join(asset_path, 'js', 'dropdown.js'), 'client');
-  api.addFiles(path.join(asset_path, 'js', 'waves.js'), 'client');
+  api.addFiles(path.join(asset_path, 'js', 'forms.js'), 'client');
+  api.addFiles(path.join(asset_path, 'js', 'global.js'), 'client');
+  api.addFiles(path.join(asset_path, 'js', 'leanModal.js'), 'client');
+  api.addFiles(path.join(asset_path, 'js', 'materialbox.js'), 'client');
+  api.addFiles(path.join(asset_path, 'js', 'parallax.js'), 'client');
+  api.addFiles(path.join(asset_path, 'js', 'pushpin.js'), 'client');
+  api.addFiles(path.join(asset_path, 'js', 'scrollFire.js'), 'client');
+  api.addFiles(path.join(asset_path, 'js', 'scrollspy.js'), 'client');
+  api.addFiles(path.join(asset_path, 'js', 'sideNav.js'), 'client');
+  api.addFiles(path.join(asset_path, 'js', 'slider.js'), 'client');
   api.addFiles(path.join(asset_path, 'js', 'tabs.js'), 'client');
+  api.addFiles(path.join(asset_path, 'js', 'toasts.js'), 'client');
+  api.addFiles(path.join(asset_path, 'js', 'tooltip.js'), 'client');
+  api.addFiles(path.join(asset_path, 'js', 'transitions.js'), 'client');
+  api.addFiles(path.join(asset_path, 'js', 'waves.js'), 'client');
+
+
+  api.addFiles(path.join(asset_path, 'sass/components/date_picker', '_default.scss'), 'server');
+  api.addFiles(path.join(asset_path, 'sass/components/date_picker', '_default.date.scss'), 'server');
+  api.addFiles(path.join(asset_path, 'sass/components/date_picker', '_default.time.scss'), 'server');
+
+
 
   // fonts
   api.addFiles(path.join(asset_path, 'font/roboto', 'Roboto-Bold.ttf'), 'client');
