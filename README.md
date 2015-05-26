@@ -1,4 +1,4 @@
-# Materialize sass
+# Materialize sass (Not mantained anymore)
 [Materialize css theme](http://materializecss.com) built via scss files
 
 *WARNING*: Work in progress, you have to attach yourself the needed javascript
